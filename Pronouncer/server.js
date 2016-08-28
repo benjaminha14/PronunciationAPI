@@ -14,8 +14,9 @@ app.get('/', function(request, response) {
 
   var uri = request.param('uri');
   response.send(uri);
-  console.log(request._parsedUrl.query);
+  
   var url = request._parsedUrl.query.replace("uri=",'');
+  console.log(url);
 });
 app.listen(process.env.PORT);
 //console.log(process.env.PORT);
