@@ -16,5 +16,5 @@ app.get('/', function(request, response) {
   response.send(uri);
   console.log(request._parsedUrl.query);
 });
-app.listen(8000);
+app.listen(process.env.PORT);
 //console.log(process.env.PORT);
